@@ -40,9 +40,6 @@
   }
 
   .menu {
-    // position: absolute;
-    // top: -60px;
-    // left: -8px;
     height: calc(100vh - 730px);
     display: flex;
     flex-direction: column;
@@ -204,6 +201,7 @@ footer {
 /********************Home*****************/
 // hero section
 #hero {
+  font-family: 'ocr';
   color: var(--text-color);
   position: relative;
   top: -150px;
