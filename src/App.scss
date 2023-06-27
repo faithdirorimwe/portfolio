@@ -40,9 +40,9 @@
   }
 
   .menu {
-    position: absolute;
-    top: -60px;
-    left: -8px;
+    // position: absolute;
+    // top: -60px;
+    // left: -8px;
     height: calc(100vh - 730px);
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@
     transform: translateX(0);
     position: fixed;
     left: 30px;
-    top: 20px;
+    padding-top: 254px;
 
   }
 }
@@ -66,7 +66,7 @@
 footer {
 
   position: relative;
-  top: 500px;
+  top: 362px;
   padding-bottom: 150px;
   width: 100%;
 
@@ -204,10 +204,10 @@ footer {
 /********************Home*****************/
 // hero section
 #hero {
-  position: absolute;
-  top: 0;
   color: var(--text-color);
-  height: 100vh;
+  position: relative;
+  top: -80px;
+ 
 
   .image {
     position: fixed;
@@ -247,7 +247,7 @@ footer {
 
 // project section
 #projects{
-  padding-top: 900px;
+  padding-top: 440px;
 }
 
 
@@ -271,11 +271,19 @@ footer {
     }
 
     .menu.show{
-      top: 45px;
+      top: -200px;
       left: 20rem;
   
     }
 
+  }
+
+  #hero{
+    top: 0px;
+  }
+
+  #projects{
+    padding-top: 680px;
   }
 
   footer {
@@ -339,6 +347,7 @@ footer {
 
   .navbar{
     .menu.show{
+      top: -200px;
       left: 33rem;
     }
 }
