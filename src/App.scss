@@ -27,7 +27,7 @@
     cursor: pointer;
     position: absolute;
     z-index: 1;
-    top: 41px;
+    top: 0;
   
 
     .bar {
@@ -206,7 +206,7 @@ footer {
 #hero {
   color: var(--text-color);
   position: relative;
-  top: -80px;
+  top: -150px;
  
 
   .image {
