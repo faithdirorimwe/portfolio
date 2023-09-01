@@ -255,7 +255,7 @@ footer {
 // project section
 #projects{
   // z-index: 1;
-  padding-top: 790px;
+  padding-top: 510px;
 
   .text{
     padding-top: 60px;
@@ -363,6 +363,10 @@ footer {
     }
 }
 
+#projects{
+  padding-top: 790px;
+}
+
   footer {
     .connect {
       .reach-out {
@@ -400,6 +404,7 @@ footer {
     }
 
     .content {
+      top: 350px;
       h1 {
         font-size: 67px;
       }
