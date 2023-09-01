@@ -86,7 +86,7 @@ const Footer = () => {
                     <Link>GitHub</Link>
                 </div>
             </div>
-            <p>Copyright (c) 2023 Faith Dirorimwe - Frontend Web Developer. All Rights Reserved. designed by denzel.</p>
+            <p>Copyright (c) 2023 Faith Dirorimwe - Frontend Web Developer. All Rights Reserved. designed by Denzel.</p>
         </footer>
     );
 };

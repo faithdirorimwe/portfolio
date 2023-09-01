@@ -19,6 +19,7 @@
     "react-icons": "^4.9.0",
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.11.2",
+    "react-scroll": "^1.8.9",
     "sass": "^1.62.1"
   },
   "devDependencies": {

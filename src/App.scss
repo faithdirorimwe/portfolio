@@ -14,6 +14,12 @@
   font-size: 17px;
 }
 
+
+
+.home{
+  position: relative;
+}
+
 /********************NAVBAR*****************/
 .navbar {
   margin-top: -9px;
@@ -144,7 +150,7 @@ footer {
     margin-top: 150px;
     margin-bottom: 30px;
     width: 100%;
-    background: var(--border-color);
+    // background: var(--border-color);
     border: 1px solid var(--form-color);
     backdrop-filter: blur(122px);
     padding: 40px;
@@ -204,7 +210,7 @@ footer {
   font-family: 'ocr';
   color: var(--text-color);
   position: relative;
-  top: -150px;
+  
  
 
   .image {
@@ -221,6 +227,7 @@ footer {
     position: relative;
     top: 300px;
     text-align: start;
+ 
 
     h1 {
       font-family: 'hacked';
@@ -239,13 +246,20 @@ footer {
 
       
     }
+
+    
   }
 }
 
 
 // project section
 #projects{
-  padding-top: 440px;
+  // z-index: 1;
+  padding-top: 790px;
+
+  .text{
+    padding-top: 60px;
+  }
 }
 
 
@@ -269,7 +283,7 @@ footer {
     }
 
     .menu.show{
-      top: -200px;
+      top: -100px;
       left: 20rem;
   
     }
@@ -345,7 +359,6 @@ footer {
 
   .navbar{
     .menu.show{
-      top: -200px;
       left: 33rem;
     }
 }

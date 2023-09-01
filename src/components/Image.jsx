@@ -5,7 +5,10 @@ import color from "../assets/images/color.svg";
 const Image = () => {
     return ( 
         <div className="img-con">
-            <img src={color} alt="" />
+            <marquee behavior="right, " direction="">
+             <img src={color} alt="" />    
+            </marquee>
+           
         {/* <div className="image"></div>
         <div className="image"></div>
         <div className="image"></div>

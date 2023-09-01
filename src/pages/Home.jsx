@@ -2,8 +2,20 @@
 import { Link } from "react-router-dom";
 import data from "../../database/db";
 import Card from "../components/Card";
+import React, { useRef } from 'react';
 
 const Home = () => {
+  const url = 'https://faithdirorimwe.github.io/Nyamatusi-project/';
+  const url1= 'https://faithdirorimwe.github.io/Project-1-The-Mobi/';
+  const url2 = 'https://project-2-nowalls.vercel.app/';
+  const url3 = 'https://project-4-resellme-54ed-kalht3yz2-faithdirorimwe.vercel.app/';
+
+  const projectsRef = useRef();
+
+  const scrollToProjects = () => {
+    projectsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest', duration: 1000 });
+  };
+
   return (
     <>
       {data.Home &&
@@ -19,18 +31,25 @@ const Home = () => {
                         <h1>{item.main_title}</h1>
                         <p className="text">
                           Scroll down, and get to see some of{" "}
-                         <Link>My Work</Link>, or get to know{" "}
-                         <Link>About Me</Link>. I hope you{" "}
-                         <Link>Reach Out</Link>!
+                          <button onClick={scrollToProjects}>My Work</button>, or get to know{" "}
+                          <Link>About Me</Link>. I hope you{" "}
+                          <Link>Reach Out</Link>!
                         </p>
                       </div>
                     </section>
                   );
                 })}
 
-                <section id="projects">
-                  <Card/>
-                </section>
+              <section id="projects" ref={projectsRef}>
+                <Card />
+
+                <p className="text">
+                  With 1 year’s experience, I am skilled in using <Link to={url}>HTML,</Link> <Link to={url1}>CSS,</Link> <Link to={url2}>JavaScript &</Link> <Link>WordPress</Link> with ease to create seamless user interfaces that promote great experience.
+                  Proficient in using libraries like <Link to={url3}>ReactJS</Link> to merely give me the upper hand in my industry.
+                </p>
+
+                <p>My other superpowers are <Link>UI Design &</Link> <Link>Digital Marketing.</Link></p>
+              </section>
             </main>
           );
         })}

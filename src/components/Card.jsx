@@ -15,7 +15,7 @@ const Card = () => {
                                         <p>{item.ptext}</p>
                                     </div>
                                     <div className="btn-con">
-                                        <Link className="btn">{item.btn}</Link>
+                                        <Link to={item.url} className="btn">{item.btn}</Link>
                                         <div></div>
                                     </div>
 

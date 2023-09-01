@@ -17,7 +17,9 @@
   --span-color: #ffffff;
   --txt-color: rgba(255, 255, 255, 0.25);
   --form-color: #00FFFF;
-  --border-color: linear-gradient(123.63deg, rgba(0, 255, 255, 0.027) 0%, rgba(255, 255, 255, 0) 112.15%);
+  --border-color:linear-gradient(106.94deg, #00FFFF 0%, rgba(0, 0, 0, 0) 137.09%);
+
+;
 
 }
 
@@ -36,6 +38,9 @@
 
 body {
   overflow-x: hidden;
+  background-color:#131313;
+  color: #FFFFFF40;
+  ;
 }
 
 * {
@@ -64,7 +69,9 @@ a:hover {
 .img-con {
   top: 0;
   position: fixed;
+  rotate: -150deg;
 }
+
 
 
 .card-container {
@@ -75,10 +82,11 @@ a:hover {
 
   .card {
     width: 100%;
-    background: var(--border-color);
+    // background: var(--border-color);
     border: 1px solid var(--form-color);
     border-radius: 20px;
     padding: 20px;
+    z-index: 1;
 
     .heading {
       text-align: start;
@@ -98,9 +106,14 @@ a:hover {
       align-items: center;
       gap: 20px;
       // text-align: end;
+ 
+      &:hover{
+        color: #131313;
+      }
 
       a {
         font-size: 10px;
+        
       }
 
       div {
