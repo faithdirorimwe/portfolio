@@ -2,7 +2,6 @@
 import { Link } from "react-router-dom";
 import data from "../../database/db";
 import Card from "../components/Card";
-import React, { useRef } from 'react';
 
 const Home = () => {
   const url = 'https://faithdirorimwe.github.io/Nyamatusi-project/';
@@ -10,11 +9,7 @@ const Home = () => {
   const url2 = 'https://project-2-nowalls.vercel.app/';
   const url3 = 'https://project-4-resellme-54ed-kalht3yz2-faithdirorimwe.vercel.app/';
 
-  const projectsRef = useRef();
-
-  const scrollToProjects = () => {
-    projectsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest', duration: 1000 });
-  };
+ 
 
   return (
     <>
@@ -31,7 +26,7 @@ const Home = () => {
                         <h1>{item.main_title}</h1>
                         <p className="text">
                           Scroll down, and get to see some of{" "}
-                          <button onClick={scrollToProjects}>My Work</button>, or get to know{" "}
+                          <Link>My Work</Link>, or get to know{" "}
                           <Link>About Me</Link>. I hope you{" "}
                           <Link>Reach Out</Link>!
                         </p>
@@ -40,7 +35,7 @@ const Home = () => {
                   );
                 })}
 
-              <section id="projects" ref={projectsRef}>
+              <section id="projects">
                 <Card />
 
                 <p className="text">
