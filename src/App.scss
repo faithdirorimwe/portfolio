@@ -28,6 +28,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  font-family: 'ocr';
 
   .navbar-menu-icon {
     cursor: pointer;
@@ -67,7 +68,7 @@
 
 /********************FOOTER*****************/
 footer {
-
+  font-family: 'ocr';
   position: relative;
   top: 91px;
   padding-bottom: 150px;
@@ -255,6 +256,7 @@ footer {
 // project section
 #projects{
   // z-index: 1;
+  font-family: 'ocr';
   padding-top: 510px;
 
   .text{
