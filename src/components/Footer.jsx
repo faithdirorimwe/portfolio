@@ -73,7 +73,7 @@ const Footer = () => {
                         </div>
                         <div className="nav-links">
                            <NavLink to="/Work">My Work</NavLink>
-                            <Link to="">My Resume</Link>
+                            <Link to="https://drive.google.com/file/d/1uwrKxU4OLdzhZ2Iuni45BhVb-KfnPLq0/view?usp=drive_link">My Resume</Link>
                         </div>
                     </div>
                 </div>
