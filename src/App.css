@@ -1,0 +1,384 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.home {
+  position: relative;
+}
+
+/********************NAVBAR*****************/
+.navbar {
+  margin-top: -9px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  font-family: "ocr";
+}
+.navbar .navbar-menu-icon {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.navbar .navbar-menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--form-color);
+  margin: 5px 0;
+}
+.navbar .menu {
+  height: calc(100vh - 730px);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  transform: translateX(-1000%);
+  transition: transform 0.5s ease-in-out;
+  font-size: 11px;
+}
+.navbar .menu.show {
+  transform: translateX(0);
+  position: fixed;
+  left: 30px;
+  padding-top: 138px;
+}
+
+/********************FOOTER*****************/
+footer {
+  font-family: "ocr";
+  position: relative;
+  top: 91px;
+  padding-bottom: 150px;
+  width: 100%;
+}
+footer .connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+footer .connect .infor {
+  text-align: start;
+  color: var(--span-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .connect .infor a {
+  border-bottom: 1px solid var(--span-color);
+}
+footer .connect .infor h1 {
+  font-size: 25px;
+}
+footer .connect .infor p {
+  font-size: 17px;
+  padding-top: 20px;
+}
+footer .connect .reach-out input,
+footer .connect .reach-out textarea {
+  color: var(--txt-color);
+  border-radius: 5px;
+  border: 2px solid var(--form-color);
+  background: none;
+}
+footer .connect .reach-out .name,
+footer .connect .reach-out .email {
+  width: 90vw;
+  padding: 13px;
+}
+footer .connect .reach-out .msg {
+  width: 90vw;
+  padding: 13px;
+  height: 160px;
+}
+footer .connect .reach-out .submit-container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .connect .reach-out .submit {
+  padding: 13px;
+  max-width: 72vw;
+  border-radius: 5px;
+  color: var(--form-color);
+  margin-left: auto;
+  background: none;
+  border: 2px solid var(--form-color);
+}
+footer .footer-inner {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  width: 100%;
+  border: 1px solid var(--form-color);
+  -webkit-backdrop-filter: blur(122px);
+          backdrop-filter: blur(122px);
+  padding: 40px;
+  border-radius: 20px;
+}
+footer .footer-inner .home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+footer .footer-inner .home-links .name {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-inner .home-links .name h1 {
+  font-family: "hacked";
+  font-size: 20px;
+}
+footer .footer-inner .home-links .links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+}
+footer .footer-inner .home-links .nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+footer .footer-inner .social-links {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+footer .footer-inner .social-links a {
+  border-bottom: 1px solid var(--span-color);
+}
+
+/********************Home*****************/
+#hero {
+  font-family: "ocr";
+  color: var(--text-color);
+  position: relative;
+}
+#hero .image {
+  position: fixed;
+  left: -110px;
+}
+#hero .image img {
+  width: 100%;
+  height: 100vh;
+}
+#hero .content {
+  position: relative;
+  top: 130px;
+  text-align: start;
+}
+#hero .content h1 {
+  font-family: "hacked";
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#hero .content .title {
+  color: var(--text-color);
+}
+#hero .content p {
+  font-size: 17px;
+  color: var(--txt-color);
+}
+
+#projects {
+  font-family: "ocr";
+  padding-top: 400px;
+}
+#projects .text {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .navbar-menu-icon {
+    display: none;
+  }
+  .navbar .menu {
+    font-size: 16px;
+    line-height: 25px;
+    flex-direction: row;
+    margin-left: auto;
+    top: 41px;
+    gap: 100px;
+  }
+  .navbar .menu.show {
+    top: -100px;
+    left: 13rem;
+  }
+  #hero {
+    top: 0px;
+  }
+  #projects {
+    padding-top: 680px;
+  }
+  footer .connect {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 140px;
+  }
+  footer .connect .infor {
+    align-items: start;
+  }
+  footer .connect .reach-out .submit {
+    width: 200px;
+  }
+  footer .connect .reach-out .email,
+  footer .connect .reach-out .name,
+  footer .connect .reach-out .msg {
+    width: 320px;
+  }
+  footer .footer-inner .home-links .name {
+    align-items: start;
+  }
+  footer .footer-inner .social-links {
+    margin-top: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #hero .content h1 {
+    font-size: 52px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar .menu.show {
+    left: 23rem;
+  }
+  #projects {
+    padding-top: 790px;
+  }
+  footer .connect .reach-out .email,
+  footer .connect .reach-out .name,
+  footer .connect .reach-out .msg {
+    width: 500px;
+  }
+  footer .footer-inner .home-links {
+    margin-top: 30px;
+    flex-direction: row;
+    align-items: center;
+    gap: 223px;
+  }
+  footer .footer-inner .home-links .links {
+    flex-direction: row;
+    gap: 80px;
+  }
+  #hero .image img {
+    width: 130%;
+  }
+  #hero .content {
+    top: 350px;
+  }
+  #hero .content h1 {
+    font-size: 67px;
+  }
+  #hero .content .text {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar .menu.show {
+    left: 33rem;
+  }
+  footer .connect {
+    gap: 350px;
+  }
+  footer .connect .infor {
+    margin-top: 65px;
+  }
+  footer .connect .infor h1 {
+    font-size: 36px;
+  }
+  footer .connect .infor p {
+    padding-top: 25px;
+    line-height: 35px;
+    font-size: 18px;
+  }
+  footer .connect .reach-out input,
+  footer .connect .reach-out textarea {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  footer .connect .reach-out .email,
+  footer .connect .reach-out .name {
+    padding: 20px;
+  }
+  footer .connect .reach-out .submit {
+    width: 200px;
+    padding: 20px;
+    font-size: 18px;
+  }
+  footer .footer-inner {
+    font-size: 18px;
+  }
+  footer .footer-inner .home-links {
+    padding-top: 30px;
+    gap: 250px;
+    justify-content: center;
+  }
+  footer .footer-inner .home-links .links {
+    position: relative;
+    right: 60px;
+    bottom: px;
+  }
+  footer .footer-inner .home-links .name h1 {
+    font-size: 37px;
+  }
+  footer .footer-inner .social-links {
+    justify-content: center;
+    gap: 130px;
+  }
+  #hero img {
+    position: relative;
+    left: -74px;
+    top: -9px;
+  }
+  #hero .content {
+    top: 279px;
+  }
+  #hero .content h1 {
+    font-size: 90px;
+  }
+  #hero .content p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .navbar .menu.show {
+    left: 45rem;
+  }
+  .navbar .menu.show a {
+    font-size: 21px;
+  }
+  #hero .image {
+    left: 170px;
+    width: 50%;
+  }
+  #hero img {
+    left: 85px;
+  }
+  #hero .content {
+    top: 253px;
+  }
+  #hero .content h1 {
+    font-size: 95px;
+  }
+  #hero .content p {
+    font-size: 26px;
+  }
+  #hero .content .text {
+    width: 914px;
+    line-height: 25px;
+  }
+}/*# sourceMappingURL=App.css.map */

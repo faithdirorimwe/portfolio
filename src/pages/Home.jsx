@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import data from "../../database/db";
 import Card from "../components/Card";
+import {  NavLink } from 'react-router-dom';
 
 const Home = () => {
   const url = 'https://faithdirorimwe.github.io/Nyamatusi-project/';
@@ -26,9 +27,9 @@ const Home = () => {
                         <h1>{item.main_title}</h1>
                         <p className="text">
                           Scroll down, and get to see some of{" "}
-                          <Link>My Work</Link>, or get to know{" "}
-                          <Link>About Me</Link>. I hope you{" "}
-                          <Link>Reach Out</Link>!
+                          <NavLink to = "/Work">My Work</NavLink>, or get to know{" "}
+                          <NavLink to = "/About">About Me</NavLink>. I hope you{" "}
+                          <NavLink to = "/Contact">Reach Out</NavLink>!
                         </p>
                       </div>
                     </section>
@@ -43,7 +44,7 @@ const Home = () => {
                   Proficient in using libraries like <Link to={url3}>ReactJS</Link> to merely give me the upper hand in my industry.
                 </p>
 
-                <p>My other superpowers are <Link>UI Design &</Link> <Link>Digital Marketing.</Link></p>
+                <p>My other superpowers are <NavLink to = "/Design">UI Design &</NavLink> <Link>Digital Marketing.</Link></p>
               </section>
             </main>
           );

@@ -1,0 +1,128 @@
+@import 'animate.css';
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "ocr";
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --bg-color: #131313;
+  --text-color: #D3D3D3;
+  --span-color: #ffffff;
+  --txt-color: rgba(255, 255, 255, 0.25);
+  --form-color: #00FFFF;
+  --border-color:linear-gradient(106.94deg, #00FFFF 0%, rgba(0, 0, 0, 0) 137.09%);
+}
+
+@font-face {
+  font-family: "hacked";
+  src: url(../src/assets/fonts/HACKED.ttf);
+}
+@font-face {
+  font-family: "ocr";
+  src: url(../src/assets/fonts/OCR\ A\ Extended\ Regular.ttf);
+}
+body {
+  overflow-x: hidden;
+  background-color: #131313;
+  color: rgba(255, 255, 255, 0.2509803922);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ocr";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--span-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--border-color);
+}
+
+.img-con {
+  top: 0;
+  position: fixed;
+  rotate: -150deg;
+}
+
+.card-container {
+  font-family: "ocr";
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.card-container .card {
+  width: 100%;
+  border: 1px solid var(--form-color);
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 1;
+}
+.card-container .card .heading {
+  text-align: start;
+}
+.card-container .card .heading h1 {
+  font-size: 18px;
+}
+.card-container .card .heading p {
+  font-size: 9px;
+}
+.card-container .card .btn-con {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+.card-container .card .btn-con:hover {
+  color: #131313;
+}
+.card-container .card .btn-con a {
+  font-size: 10px;
+}
+.card-container .card .btn-con div {
+  display: block;
+  border: 2px solid #ffffff;
+  width: 20px;
+  height: 20px;
+}
+.card-container .card img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    padding: 58px;
+  }
+  .card-container .card {
+    margin: 0 auto;
+    width: 35vw;
+  }
+  .card-container .card .heading h1 {
+    font-size: 25px;
+  }
+  .card-container .card .heading p {
+    font-size: 18px;
+  }
+  .card-container .card .btn-con a {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card-container {
+    padding: 79px;
+  }
+}/*# sourceMappingURL=index.css.map */

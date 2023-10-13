@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import Footer from './components/Footer'
 import Image from './components/Image'
 import About from './pages/About'
+import Design from './pages/Design'
+import Work from './pages/Work'
 function App() {
   
 
@@ -16,6 +18,8 @@ function App() {
       <Routes>
       <Route exact path='/' element={ <Home/>}/>
       <Route exact path ='/About' element= {<About/>}/>
+      <Route exact path ='/Design' element= {<Design/>}/>
+      <Route exact path ='/Work' element= {<Work/>}/>
       </Routes>
       <Footer/>
     </div>
