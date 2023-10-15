@@ -22,7 +22,7 @@ const Loading = () => {
         </div>
       ) : (
         <div className={`content-container ${showContent ? 'show' : ''}`}>
-        <div className="content"><About/> <Work/> </div>
+        <div className="content"><About/>  </div>
       </div>
       )}
     </div>
