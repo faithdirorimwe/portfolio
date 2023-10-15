@@ -200,6 +200,26 @@ footer .footer-inner .social-links a {
   padding-top: 60px;
 }
 
+/********************About*****************/
+#about {
+  padding-top: 135px;
+  text-align: start;
+}
+#about .about-details {
+  margin-top: 40px;
+  width: 100%;
+  border: 1px solid var(--form-color);
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 1;
+}
+#about .about-details h2 {
+  padding-bottom: 30px;
+}
+#about .about-details p span {
+  color: #ffffff;
+}
+
 @media screen and (min-width: 768px) {
   .navbar .navbar-menu-icon {
     display: none;

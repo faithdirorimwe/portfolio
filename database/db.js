@@ -80,7 +80,7 @@ const data ={
 
     card_design:[
         {
-            "id": 1,
+            "id": 3,
             "card":[
                 {
                     "id":1,
@@ -91,6 +91,17 @@ const data ={
         }
      
 
+    ],
+
+    aboutcard:[
+        {
+            "id":4,
+            "text1":"Hi, I'm Faith Dirorimwe, a dedicated web developer with a passion for leveraging technology to tackle real-world challenges. During my time at Uncommon.org, I had the opportunity to acquire valuable skills in building responsive websites using HTML, CSS, JavaScript, and ReactJS. I also honed my abilities in debugging and problem-solving techniques.",
+            "text2":"Currently, I am expanding my knowledge by delving into the fundamentals of Java, PHP, Laravel, algorithms, and data structures as part of my ongoing internship. By mastering these languages and frameworks, I aspire to excel in the dynamic software industry.",
+            "text3":"Prior to my journey in the tech field, I pursued a degree in sociology. This unique background empowers me with a comprehensive understanding of social dynamics. Combining my technical expertise and passion for effecting positive social change, I am determined to address pressing issues within our communities.",
+            "text4":"I am driven by the desire to make a meaningful impact in the tech sector and contribute to changing the world through my abilities. I am excited about the possibilities that lie ahead and look forward to collaborating on innovative projects that push the boundaries of technological advancement.",
+            "text5":"Feel free to explore my portfolio and get in touch to discuss how we can create a positive change together."
+        }
     ]
 }
 

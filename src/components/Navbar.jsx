@@ -25,10 +25,10 @@ const Navbar = () => {
             </div>
             
             <ul className={`menu ${menuOpen ? "show" : ""}`}>
-            <li className='menu-item'><NavLink to = "/">Home</NavLink></li>
-            <li className='menu-item'><NavLink to = "/About">About Me</NavLink></li>
-            <li className='menu-item'><NavLink to = "/Work">My Work</NavLink></li>
-            <li className='menu-item'><NavLink to = "/Contact">Contact</NavLink></li>
+            <li className='menu-item'><NavLink to = "/"  >Home</NavLink></li>
+            <li className='menu-item'><NavLink to = "/About"  >About Me</NavLink></li>
+            <li className='menu-item'><NavLink to = "/Work"  >My Work</NavLink></li>
+            <li className='menu-item'><NavLink to = "/Contact"  >Contact</NavLink></li>
             </ul>
         </div>
         </header>

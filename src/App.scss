@@ -56,6 +56,11 @@
     transform: translateX(-1000%);
     transition: transform 0.5s ease-in-out;
     font-size: 11px;
+
+    // .active-link {
+    //   color: var(--border-color);
+    // }
+    
   }
 
   .menu.show {
@@ -65,6 +70,14 @@
     padding-top: 138px;
 
   }
+
+  // .active-link:active,
+  // .active-link:visited {
+  //   color: red;
+  //   /* Add any other desired styling for the active link */
+  // }
+
+  
 }
 
 /********************FOOTER*****************/
@@ -265,6 +278,34 @@ footer {
   }
 }
 
+
+/********************About*****************/
+#about{
+  // margin-top: 100px;
+  padding-top: 135px;
+  text-align: start;
+
+  .about-details{
+    margin-top: 40px;
+    width: 100%;
+    // background: var(--border-color);
+    border: 1px solid var(--form-color);
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 1;
+
+    h2{
+      padding-bottom: 30px;
+    }
+
+    p{
+      span{
+        color: #ffffff;
+      }
+    }
+  }
+ 
+}
 
 
 @media screen and (min-width: 768px) {

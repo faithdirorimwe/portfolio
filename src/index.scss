@@ -40,7 +40,7 @@
 body {
   overflow-x: hidden;
   background-color:#131313;
-  color: #FFFFFF40;
+  color: #ffffff86;
   // font-family: "ocr";
   ;
 }
@@ -63,10 +63,15 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:visited {
   color: var(--border-color);
 }
 
+// a:active{
+//   color: var(--border-color);
+// }
 
 .img-con {
   top: 0;
@@ -132,6 +137,27 @@ a:hover {
   }
 }
 
+
+.loading{
+  
+  .spinner-container {
+    background-color:#131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+
+  .content-container {
+    opacity: 0;
+    transition: opacity 3s ease-in-out 1s;
+  }
+  
+  .content-container.show {
+    opacity: 1;
+  }
+
+}
 @media screen and (min-width: 768px) {
   .card-container {
     padding: 58px;

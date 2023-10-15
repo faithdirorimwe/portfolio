@@ -30,7 +30,7 @@
 body {
   overflow-x: hidden;
   background-color: #131313;
-  color: rgba(255, 255, 255, 0.2509803922);
+  color: rgba(255, 255, 255, 0.5254901961);
 }
 
 * {
@@ -49,7 +49,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:visited {
   color: var(--border-color);
 }
 
@@ -101,6 +103,21 @@ a:hover {
 }
 .card-container .card img {
   width: 100%;
+}
+
+.loading .spinner-container {
+  background-color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loading .content-container {
+  opacity: 0;
+  transition: opacity 3s ease-in-out 1s;
+}
+.loading .content-container.show {
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {

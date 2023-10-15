@@ -1,7 +1,36 @@
 import { Link, NavLink } from "react-router-dom";
+import React, { useState } from 'react';
 
 
-const Footer = () => {    
+const Footer = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // Make a POST request to your backend server
+        try {
+            const response = await fetch('/submit-form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, message }),
+            });
+
+            if (response.ok) {
+                // Display a success message or redirect to a thank-you page
+                console.log('Email sent successfully!');
+            } else {
+                // Display an error message
+                console.error('Failed to send email');
+            }
+        } catch (error) {
+            console.error('An error occurred', error);
+        }
+    };
     return (
         <footer>
             <div className="connect">
@@ -23,44 +52,41 @@ const Footer = () => {
 
                 <div className="reach-out">
                     <form>
-                        <input type="text"
+                        <input
+                            type="text"
                             className="name"
+                            placeholder="Name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                             required
-                            value="Name"
-                            onChange={(e) => {
-                                Name = e.target.value;
-                            }}
                         />
                         <br /> <br />
-                        <input type="email"
+                        <input
                             className="email"
+                            type="email"
+                            placeholder="Email Address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             required
-                            value="Email Address"
-                            onChange={(e) => {
-                                Email_Address = e.target.value;
-                            }}
                         />
                         <br /> <br />
                         <textarea
                             className="msg"
+                            placeholder="Grab a coffee, or work on a project together?"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
                             required
-                            value="Grab a coffee, or work on a project together?"
-                            onChange={(e) => {
-                                Message = e.target.value;
-                            }}
                         />
                         <br /> <br />
                         <div className="submit-container">
                             <button type="submit"
                                 className="submit"
-                                onChange={(e) => {
-                                    submit = e.target.value;
-                                }}>Send Message</button>
+                            >Send Message</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div  className="footer-inner">
+            <div className="footer-inner">
                 <div className="home-links">
                     <div className="name">
                         <p>Faith Dirorimwe</p>
@@ -72,7 +98,7 @@ const Footer = () => {
                             <NavLink to="/About">About Me</NavLink>
                         </div>
                         <div className="nav-links">
-                           <NavLink to="/Work">My Work</NavLink>
+                            <NavLink to="/Work">My Work</NavLink>
                             <Link to="https://drive.google.com/file/d/1uwrKxU4OLdzhZ2Iuni45BhVb-KfnPLq0/view?usp=drive_link">My Resume</Link>
                         </div>
                     </div>
