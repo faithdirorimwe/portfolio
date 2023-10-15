@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FadeLoader } from 'react-spinners';
+import About from '../pages/About';
+import Work from '../pages/Work';
 
 const Loading = () => {
   const [showContent, setShowContent] = useState(false);
@@ -20,7 +22,7 @@ const Loading = () => {
         </div>
       ) : (
         <div className={`content-container ${showContent ? 'show' : ''}`}>
-        <div className="content">Your website content here</div>
+        <div className="content"><About/> <Work/> </div>
       </div>
       )}
     </div>
