@@ -4,6 +4,7 @@ import data from "../../database/db";
 import Card from "../components/Card";
 import {  NavLink } from 'react-router-dom';
 
+
 const Home = () => {
   const url = 'https://faithdirorimwe.github.io/Nyamatusi-project/';
   const url1= 'https://faithdirorimwe.github.io/Project-1-The-Mobi/';
