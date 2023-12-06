@@ -51,7 +51,7 @@ const Footer = () => {
                 </div>
 
                 <div className="reach-out">
-                    <form>
+                <form action="https://formsubmit.co/taithdone@gmail.com" method="POST">
                         <input
                             type="text"
                             className="name"
