@@ -3,34 +3,7 @@ import React, { useState } from 'react';
 
 
 const Footer = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        // Make a POST request to your backend server
-        try {
-            const response = await fetch('/submit-form', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ name, email, message }),
-            });
-
-            if (response.ok) {
-                // Display a success message or redirect to a thank-you page
-                console.log('Email sent successfully!');
-            } else {
-                // Display an error message
-                console.error('Failed to send email');
-            }
-        } catch (error) {
-            console.error('An error occurred', error);
-        }
-    };
+   
     return (
         <footer>
             <div className="connect">
@@ -51,13 +24,12 @@ const Footer = () => {
                 </div>
 
                 <div className="reach-out">
-                <form>
+                <form action="https://data.endpoint.space/clpv87sca000008l7cy98syjn" method="POST">
                         <input
                             type="text"
                             className="name"
                             placeholder="Name"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
+                            name="name"
                             required
                         />
                         <br /> <br />
@@ -65,16 +37,14 @@ const Footer = () => {
                             className="email"
                             type="email"
                             placeholder="Email Address"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            name="email"
                             required
                         />
                         <br /> <br />
                         <textarea
                             className="msg"
                             placeholder="Grab a coffee, or work on a project together?"
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
+                            name="msg"
                             required
                         />
                         <br /> <br />
