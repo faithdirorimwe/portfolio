@@ -4,6 +4,8 @@
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
 
     useEffect(() => {
         if (window.innerWidth >= 768) {
@@ -18,7 +20,7 @@ const Navbar = () => {
     return ( 
       <header>
         <div className="navbar">
-            <div className="navbar-menu-icon" onClick={handleMenuClick}>
+            <div className={`navbar-menu-icon ${menuOpen ? "close" : ""}`} onClick={handleMenuClick}>
                 <div className="bar"></div>
                 <div className="bar"></div>
                 <div className="bar"></div>
